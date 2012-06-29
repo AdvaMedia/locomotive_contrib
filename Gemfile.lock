@@ -8,7 +8,7 @@ PATH
       kaminari
       liquid
       locomotive_cms (~> 2.0.0.rc9)
-      rails (~> 3.2.6)
+      rails (~> 3.2.5)
       simple_form
 
 GEM

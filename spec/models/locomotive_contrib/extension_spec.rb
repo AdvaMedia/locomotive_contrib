@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Extension do
+describe LocomotiveContrib::Extension do
   before do
     @extension = create :extension
   end
@@ -8,4 +8,5 @@ describe Extension do
   it "should be valid" do
     @extension.should be_valid
   end
+
 end

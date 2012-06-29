@@ -1,3 +1,4 @@
+require 'locomotive_cms'
 require 'haml'
 require 'mongoid'
 require 'mongoid/railtie'

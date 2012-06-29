@@ -14,6 +14,13 @@ module LocomotiveContrib
       ::ActionController::Base.wrap_parameters :format => [:json]
     end
 
+    def self.activate
+      Dir.glob(File.join(File.dirname(__FILE__), "../../app/**/*_decorator*.rb")) do |c|
+        Rails.configuration.cache_classes ? require(c) : load(c)
+      end
+    end
+    config.to_prepare &method(:activate).to_proc
+
     config.generators do |g|
       g.view_specs false
       g.helper_specs false

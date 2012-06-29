@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Extension::MetaInformation do
+describe LocomotiveContrib::Extension::MetaInformation do
   before do
     @extension = create :extension
     @meta_information = @extension.meta_information
