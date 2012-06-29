@@ -3,8 +3,12 @@
 # newer version of cucumber-rails. Consider adding your own code to a new file 
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
+ENV["RAILS_ENV"] = "test" # had to explicity state the test environment (or cucumber env.)
+ENV["RAILS_ROOT"] = File.expand_path(File.dirname(__FILE__) + '/../../spec/dummy/')
+require File.expand_path(File.dirname(__FILE__) + '/../../spec/dummy/config/environment')
 
 require 'cucumber/rails'
+require 'email_spec'
 require 'email_spec/cucumber'
 
 # Capybara defaults to XPath selectors rather than Webrat's default of CSS3. In

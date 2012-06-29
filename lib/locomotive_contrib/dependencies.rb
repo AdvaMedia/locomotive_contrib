@@ -1,0 +1,8 @@
+require 'haml'
+require 'mongoid'
+require 'mongoid/railtie'
+require 'mongoid/tree'
+require 'kaminari'
+require 'haml'
+require 'liquid'
+require 'cells'
