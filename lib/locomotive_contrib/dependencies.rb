@@ -1,3 +1,4 @@
+RMAGICK_BYPASS_VERSION_TEST = true
 require 'locomotive_cms'
 require 'haml'
 require 'mongoid'
