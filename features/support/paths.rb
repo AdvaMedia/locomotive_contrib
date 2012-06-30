@@ -1,4 +1,5 @@
 module NavigationHelpers
+  include LocomotiveContrib::Engine.routes.url_helpers
   include Locomotive::Engine.routes.url_helpers # Load engine routes
 
   # Maps a name to a path. Used by the
@@ -35,6 +36,8 @@ module NavigationHelpers
     when /the "(.*)" model edition page/
       content_type = Locomotive::Site.first.content_types.where(:name => $1).first
       edit_content_type_path(content_type)
+     when /extensions page/
+       extensions_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

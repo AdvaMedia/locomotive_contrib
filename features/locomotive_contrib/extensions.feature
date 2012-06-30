@@ -9,5 +9,5 @@ Background:
 
 Scenario: Theme assets list is not accessible for non authenticated accounts
   Given I am not authenticated
-  When I go to theme assets
+  When I go to extensions page
   Then I should see "Log in"
