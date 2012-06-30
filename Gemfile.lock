@@ -223,6 +223,9 @@ GEM
     net-ssh (2.5.2)
     nokogiri (1.5.5)
     orm_adapter (0.3.0)
+    pickle (0.4.10)
+      cucumber (>= 0.8)
+      rake
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -317,6 +320,7 @@ DEPENDENCIES
   jquery-rails
   launchy (>= 2.1.0)
   locomotive_contrib!
+  pickle
   rspec-rails (>= 2.10.1)
   sass-rails
   uglifier

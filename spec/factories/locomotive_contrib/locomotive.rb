@@ -10,8 +10,8 @@ FactoryGirl.define do
       name 'Locomotive test website'
       subdomain 'test'
 
-      after_build do |site_test|
-        site_test.memberships.build :account => Locomotive::Account.where(:name => "Admin").first || Factory("admin user"), :role => 'admin'
+      after :build do |site_test|
+        site_test.memberships.build :account => Locomotive::Account.where(:name => "Admin").first || create("admin user"), :role => 'admin'
       end
 
       factory "another site" do
@@ -24,7 +24,7 @@ FactoryGirl.define do
     factory "existing site" do
       name "Locomotive site with existing models"
       subdomain "models"
-      after_build do |site_with_models|
+      after :build do |site_with_models|
         site_with_models.content_types.build(
           :slug => 'projects',
           :name => 'Existing name',
