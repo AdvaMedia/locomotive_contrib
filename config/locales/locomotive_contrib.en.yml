@@ -4,4 +4,9 @@ en:
     shared: 
       menu: 
         extensions: Extensions
+  locomotive_contrib: 
+    extensions: 
+      index: 
+        ask_for_name: "Site name"
+        new: "Add extension"
 

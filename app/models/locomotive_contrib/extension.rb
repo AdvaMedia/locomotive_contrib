@@ -6,4 +6,6 @@ class LocomotiveContrib::Extension
   belongs_to :site, :class_name => 'Locomotive::Site'
 
   validates :meta_information, :configuration, presence: true
+
+  scope :web, ->{all}
 end
