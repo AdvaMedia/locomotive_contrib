@@ -9,4 +9,10 @@ describe LocomotiveContrib::Extension do
     @extension.should be_valid
   end
 
+  it "should not add extension with some slug" do
+    ->{
+      create :extension, :slug => @extension.slug, :site => @extension.site
+    }.should raise_error
+  end
+
 end

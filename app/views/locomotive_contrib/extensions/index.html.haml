@@ -4,3 +4,8 @@
   - content_for :buttons do
     = local_action_button :new, new_extension_url, :class => 'new', :id => 'newpage'
 
+- if @extensions.empty?
+  %p.no-items!= t('.no_items', :url => new_extension_path)
+- else
+  %ul#entries-list.list
+    = render @extensions

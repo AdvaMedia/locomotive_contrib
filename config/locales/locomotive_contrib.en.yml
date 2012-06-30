@@ -8,9 +8,13 @@ en:
         extensions: Extensions
   locomotive_contrib: 
     extensions: 
+      form: 
+        extension: Extension
       index: 
         ask_for_name: "Site name"
         new: "Add extension"
+        no_items: "No one extension else. Add one by <a href='%{url}'>this link</a>"
+        title: "The list of installed extensions on the site"
       new: 
         help: "You can add a module available for your site"
         title: "Add extention"

@@ -1,0 +1,6 @@
+%li{ :id => "item-#{extension.id}", :class => "item" }
+  .inner
+    = link_to extension.name, extension_path(extension)
+  .more
+    = l extension.created_at, :format => :short rescue 'n/a'
+    = link_to 'x', extension_path(extension), :class => 'remove', :confirm => t('locomotive.messages.confirm'), :method => :delete

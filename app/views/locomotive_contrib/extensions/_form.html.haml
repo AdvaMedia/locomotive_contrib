@@ -1,2 +1,6 @@
 - if can? :manage, @extension
-  = f.input :slug, :as => :select, :collection => extensions_collection(LocomotiveContrib.manager.extensions)
+  %fieldset.inputs
+    %legend
+      = content_tag :span, t('.extension')
+    %ol
+      = f.input :slug, :as => :select, :collection => extensions_collection(LocomotiveContrib.manager.extensions)
