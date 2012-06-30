@@ -1,4 +1,5 @@
 require 'locomotive_contrib/dependencies'
+require 'locomotive_contrib/extensions_manager'
 
 $:.unshift File.dirname(__FILE__) # TODO: not sure about that, looks pretty useless
 
