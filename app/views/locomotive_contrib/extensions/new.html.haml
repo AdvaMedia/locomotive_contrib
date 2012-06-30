@@ -1,0 +1,9 @@
+- title t('.title')
+
+%p!= t('.help')
+
+= simple_form_for @extension do |f|
+
+  = render "form", :f => f
+
+  = render 'locomotive/shared/form_actions', :back_url => extensions_url, :button_label => :add

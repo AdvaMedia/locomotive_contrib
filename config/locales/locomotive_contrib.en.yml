@@ -2,6 +2,8 @@
 en: 
   locomotive: 
     shared: 
+      form_actions: 
+        add: Add
       menu: 
         extensions: Extensions
   locomotive_contrib: 
@@ -9,4 +11,7 @@ en:
       index: 
         ask_for_name: "Site name"
         new: "Add extension"
+      new: 
+        help: "You can add a module available for your site"
+        title: "Add extention"
 

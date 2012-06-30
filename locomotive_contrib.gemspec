@@ -23,4 +23,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'compass'
   s.add_dependency 'kaminari'
   s.add_dependency 'liquid'
+  s.add_dependency 'draper'
 end

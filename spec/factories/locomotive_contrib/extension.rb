@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :site_extension, :aliases => [:extension],  :class => LocomotiveContrib::Extension do
-    meta_information
+    slug
     configuration
   end
 end
