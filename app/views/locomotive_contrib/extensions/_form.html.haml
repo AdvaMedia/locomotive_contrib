@@ -1,0 +1,2 @@
+- if can? :manage, @extension
+  = f.input :slug, :as => :select, :collection => extensions_collection(LocomotiveContrib.manager.extensions)

@@ -1,4 +1,4 @@
-- title link_to(@site.name.blank? ? @site.name_was : @site.name, '#', :rel => 'site_name', :title => t('.ask_for_name'), :class => 'editable')
+- title t('.title')
 
 - if can? :create, LocomotiveContrib::Extension
   - content_for :buttons do

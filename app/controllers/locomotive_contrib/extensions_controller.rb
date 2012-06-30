@@ -12,6 +12,8 @@ module LocomotiveContrib
 
     def new
       @site = current_site
+      @extension = @site.extensions.build
+      @extension.configuration = LocomotiveContrib::Extension::Configuration.new
     end
   end
 end

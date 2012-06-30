@@ -3,6 +3,7 @@ PATH
   specs:
     locomotive_contrib (0.0.1)
       compass
+      draper
       haml
       jquery-rails
       kaminari
@@ -108,6 +109,9 @@ GEM
     diff-lcs (1.1.3)
     dragonfly (0.9.12)
       rack
+    draper (0.14.0)
+      actionpack (~> 3.2)
+      activesupport (~> 3.2)
     ejs (1.0.0)
     email_spec (1.2.1)
       mail (~> 2.2)
