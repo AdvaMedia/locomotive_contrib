@@ -5,7 +5,7 @@ $:.unshift File.dirname(__FILE__) # TODO: not sure about that, looks pretty usel
 
 module LocomotiveContrib
   class Engine < ::Rails::Engine
-    isolate_namespace LocomotiveContrib
+    #isolate_namespace LocomotiveContrib
 
     initializer 'locomotive.cells' do |app|
       ::Cell::Base.prepend_view_path("#{config.root}/app/cells")

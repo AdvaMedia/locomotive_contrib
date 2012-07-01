@@ -1,0 +1,9 @@
+--- 
+en: 
+  flash: 
+    locomotive: 
+      extensions: 
+        create: 
+          alert: "Fail to add extension"
+          notice: "Extension was successfully added."
+

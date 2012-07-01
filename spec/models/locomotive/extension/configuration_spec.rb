@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe LocomotiveContrib::Extension::Configuration do
+describe Locomotive::Extension::Configuration do
   before do
     @extension = create :extension
     @configuration = @extension.configuration

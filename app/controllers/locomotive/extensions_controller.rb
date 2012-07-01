@@ -1,9 +1,9 @@
-module LocomotiveContrib
-  class ExtensionsController < BaseController
+module Locomotive
+  class ExtensionsController < ContribController
 
     sections 'extensions'
 
-    load_and_authorize_resource :class => 'LocomotiveContrib::Extension'
+    load_and_authorize_resource
 
     def index
       @site = current_site
@@ -13,15 +13,12 @@ module LocomotiveContrib
     def new
       @site = current_site
       @extension = @site.extensions.build(params[:extension])
-      @extension.configuration = LocomotiveContrib::Extension::Configuration.new
       respond_with(@extension)
     end
 
     def create
       @site = current_site
-      @extension = @site.extensions.build(params[:extension])
-      @extension.configuration = LocomotiveContrib::Extension::Configuration.new
-      @extension.save
+      @extension = @site.add_extension(params[:extension])
       respond_with @extension, :location => extensions_path
     end
 

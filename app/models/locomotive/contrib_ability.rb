@@ -1,5 +1,5 @@
-module LocomotiveContrib
-  class Ability
+module Locomotive
+  class ContribAbility
     include CanCan::Ability
 
     def initialize(account, site)

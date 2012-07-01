@@ -1,8 +1,8 @@
 - title t('.title')
 
-- if can? :create, LocomotiveContrib::Extension
+- if can? :create, Locomotive::Extension
   - content_for :buttons do
-    = local_action_button :new, new_extension_url, :class => 'new', :id => 'newpage'
+    = local_action_button :new, new_extension_url, :class => 'new', :id => 'newextension'
 
 - if @extensions.empty?
   %p.no-items!= t('.no_items', :url => new_extension_path)

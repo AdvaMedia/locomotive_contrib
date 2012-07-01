@@ -1,5 +1,4 @@
 module NavigationHelpers
-  include LocomotiveContrib::Engine.routes.url_helpers
   include Locomotive::Engine.routes.url_helpers # Load engine routes
 
   # Maps a name to a path. Used by the
