@@ -1,8 +1,8 @@
-module LocomotiveContrib
-  class BaseController < ::Locomotive::BaseController
+module Locomotive
+  class ContribController < BaseController
     
     def current_ability
-      @current_ability ||= LocomotiveContrib::Ability.new(current_locomotive_account, current_site)
+      @current_ability ||= Locomotive::ContribAbility.new(current_locomotive_account, current_site)
     end
 
     rescue_from CanCan::AccessDenied do |exception|

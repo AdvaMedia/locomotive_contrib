@@ -22,5 +22,10 @@ describe LocomotiveContrib::ExtensionsManager do
       end
     }.should change(@manager.extensions, :count).by(1)
   end
+
+  it "should return extension path by its name" do
+    @manager = LocomotiveContrib.manager
+    @manager.path(:sitemap).should == sitemap_path
+  end
   
 end

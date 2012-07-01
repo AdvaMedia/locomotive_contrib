@@ -7,7 +7,16 @@ Background:
   Given I have the site: "test site" set up
   And I am an authenticated user
 
-Scenario: Theme assets list is not accessible for non authenticated accounts
+Scenario: Extensions list is not accessible for non authenticated accounts
   Given I am not authenticated
   When I go to extensions page
   Then I should see "Log in"
+
+Scenario: Add new extension to the site
+  When I go to extensions page
+  And I follow "Add extension"
+  And I select "Site map" from "Slug"
+  And I press "Add"
+  Then I should see "Extension was successfully added."
+  And I follow "Site map"
+  Then I should be redirected to the sitemap extension page
