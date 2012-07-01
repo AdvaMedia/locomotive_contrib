@@ -18,3 +18,5 @@ Scenario: Add new extension to the site
   And I select "Site map" from "Slug"
   And I press "Add"
   Then I should see "Extension was successfully added."
+  And I follow "Site map"
+  Then I should be redirected to the sitemap extension page

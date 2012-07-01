@@ -4,7 +4,7 @@ Locomotive::Site.class_eval do
   def add_extension(params)
     extension = self.extensions.build(params)
     extension.configuration = Locomotive::Extension::Configuration.new
-    extension.save
+    extension.save!
     extension
   end
 

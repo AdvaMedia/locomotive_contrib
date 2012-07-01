@@ -15,4 +15,8 @@ describe Locomotive::Extension do
     }.should raise_error
   end
 
+  it "should return slug for to_s method" do
+    @extension.to_s.should == @extension.slug.to_s
+  end
+
 end

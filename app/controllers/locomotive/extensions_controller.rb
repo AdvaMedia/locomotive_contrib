@@ -24,6 +24,7 @@ module Locomotive
 
     def show
       @extension = current_site.extensions.find(params[:id])
+      redirect_to LocomotiveContrib.manager.path(@extension)
     end
 
     def destroy

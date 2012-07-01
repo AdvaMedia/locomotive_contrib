@@ -15,4 +15,8 @@ class Locomotive::Extension
   def name
     ::I18n.t(self.slug, :scope => "locomotive_contrib.extensions")
   end
+
+  def to_s
+    self.slug.to_s
+  end
 end
